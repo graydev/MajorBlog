@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="majorblog" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\MajorPest\\source\\repos\\AngularTest\\MajorBlog\\obj\\Release\\netcoreapp2\.1\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="MajorBlog.WebApi.Helpers.DataContext" description="" value="Data Source=tcp:grayfox.database.windows.net,1433;Initial Catalog=MajorBlogDB;User Id=grayfoxdev@grayfox.database.windows.net;Password=pest7378_;" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\MajorPest\\source\\repos\\AngularTest\\MajorBlog\\obj\\Release\\netcoreapp2\.1\\PubTmp\\EFSQLScripts\\MajorBlog\.WebApi\.Helpers\.DataContext\.sql$" />
+  </parameter>
+</parameters>

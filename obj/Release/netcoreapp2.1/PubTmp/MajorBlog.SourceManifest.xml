@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\MajorPest\source\repos\AngularTest\MajorBlog\obj\Release\netcoreapp2.1\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\MajorPest\source\repos\AngularTest\MajorBlog\obj\Release\netcoreapp2.1\PubTmp\EFSQLScripts\MajorBlog.WebApi.Helpers.DataContext.sql" />
+</sitemanifest>
