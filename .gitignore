@@ -4,6 +4,11 @@
 /dist
 /tmp
 /out-tsc
+/bin
+/obj
+*.publishprofile
+*.prod.ts
+*.production.json
 
 # dependencies
 /node_modules
