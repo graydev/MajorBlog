@@ -10,13 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="wwwroot\**" />
-    <Content Remove="wwwroot\**" />
-    <EmbeddedResource Remove="wwwroot\**" />
-    <None Remove="wwwroot\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="src\app\_models\index.ts" />
     <None Remove="src\app\_models\user.ts" />
     <None Remove="src\app\_services\index.ts" />
@@ -48,7 +41,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="src\assets\unity\" />
+    <Folder Include="wwwroot\" />
   </ItemGroup>
 
 </Project>

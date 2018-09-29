@@ -1,4 +1,4 @@
-﻿using MajorBlog.WebApi.Dtos;
+using MajorBlog.WebApi.Dtos;
 using MajorBlog.WebApi.Entities;
 using MajorBlog.WebApi.Helpers;
 using MajorBlog.WebApi.Services;
@@ -19,7 +19,7 @@ namespace MajorBlog.WebApi.Controllers
 {
     [Authorize]
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class UsersController : ControllerBase
     {
         private IUserService _userService;

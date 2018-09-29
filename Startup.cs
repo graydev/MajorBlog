@@ -15,6 +15,7 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
 using System.IO;
+using Microsoft.AspNetCore.StaticFiles;
 
 namespace MajorBlog.WebApi
 {
@@ -85,6 +86,9 @@ namespace MajorBlog.WebApi
       loggerFactory.AddConsole(Configuration.GetSection("Logging"));
       loggerFactory.AddDebug();
 
+      var provider = new FileExtensionContentTypeProvider();
+      provider.Mappings[".unityweb"] = "application/octet-stream";
+
       // global cors policy
       app.UseCors(x => x
           .AllowAnyOrigin()
@@ -102,7 +106,9 @@ namespace MajorBlog.WebApi
       });
 
       app.UseDefaultFiles();
-      app.UseStaticFiles();
+      app.UseStaticFiles(new StaticFileOptions() {
+        ContentTypeProvider = provider
+      });
 
       app.UseAuthentication();
 
