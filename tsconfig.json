@@ -2,7 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
+    "outDir": "wwwroot",
     "sourceMap": true,
     "declaration": false,
     "module": "esnext",
@@ -19,15 +19,4 @@
       "dom"
     ]
   }
-  //"compilerOptions": {
-  //  "emitDecoratorMetadata": true,
-  //  "experimentalDecorators": true,
-  //  "lib": [ "es2015", "dom" ],
-  //  "module": "commonjs",
-  //  "moduleResolution": "node",
-  //  "noImplicitAny": true,
-  //  "sourceMap": true,
-  //  "suppressImplicitAnyIndexErrors": true,
-  //  "target": "es5"
-  //}
 }

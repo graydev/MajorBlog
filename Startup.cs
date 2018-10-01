@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
 using System.IO;
 using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.AspNetCore.Http;
 
 namespace MajorBlog.WebApi
 {
@@ -96,6 +97,11 @@ namespace MajorBlog.WebApi
           .AllowAnyHeader()
           .AllowCredentials());
 
+      app.UseDefaultFiles();
+      app.UseStaticFiles(new StaticFileOptions() {
+        ContentTypeProvider = provider
+      });
+
       app.Use(async (context, next) => {
         await next();
         if (context.Response.StatusCode == 404 && !Path.HasExtension(context.Request.Path.Value) && !context.Request.Path.Value.StartsWith("/api/"))
@@ -103,11 +109,6 @@ namespace MajorBlog.WebApi
           context.Request.Path = "/index.html";
           await next();
         }
-      });
-
-      app.UseDefaultFiles();
-      app.UseStaticFiles(new StaticFileOptions() {
-        ContentTypeProvider = provider
       });
 
       app.UseAuthentication();

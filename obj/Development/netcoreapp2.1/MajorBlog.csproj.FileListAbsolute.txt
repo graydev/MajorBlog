@@ -21,3 +21,4 @@ C:\Users\MajorPest\source\repos\AngularTest\MajorBlog\obj\Development\netcoreapp
 C:\Users\MajorPest\source\repos\AngularTest\MajorBlog\obj\Development\netcoreapp2.1\MajorBlog.dll
 C:\Users\MajorPest\source\repos\AngularTest\MajorBlog\obj\Development\netcoreapp2.1\MajorBlog.pdb
 C:\Users\MajorPest\source\repos\AngularTest\MajorBlog\obj\Development\netcoreapp2.1\MajorBlog.csproj.CopyComplete
+C:\Users\MajorPest\source\repos\AngularTest\MajorBlog\obj\Development\netcoreapp2.1\MajorBlog.csprojAssemblyReference.cache

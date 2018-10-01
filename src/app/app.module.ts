@@ -19,6 +19,7 @@ import { RegisterComponent } from './register';
 import { ArticleComponent } from './article';
 import { LoginWidgetComponent } from './login-widget';
 import { UnityContainerComponent } from './unity-container';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -49,4 +50,8 @@ import { UnityContainerComponent } from './unity-container';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  public constructor() {
+    console.log("Starting App Module!");
+  }
+}

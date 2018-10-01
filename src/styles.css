@@ -10,6 +10,14 @@ body {
   color: #fff;
 }
 
+.panel{
+  border-color:#d17904;
+}
+
+.panel-body{
+  background-color: #e4b114;
+}
+
 h1, h2, h3, a, button {
   font-family: 'Luckiest Guy', cursive;
   color: #ffffff !important;
